@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Form.FormFailureToInOutFragment">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/TxtFailuretoinout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="15dp"
+                    android:gravity="center"
+                    android:text="@string/formfailure"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="24dp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_gravity="center"
+                    android:layout_below="@id/TxtFailuretoinout"
+                    android:id="@+id/TxtStartFilling"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:text="Start filling you form."
+                    android:textColor="@color/colorWhite"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:layout_gravity="center"
+                    android:id="@+id/TxtAllFields"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/TxtStartFilling"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="3dp"
+                    android:gravity="center"
+                    android:text="All fields are required for approval."
+                    android:textColor="@color/colorWhite"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:layout_marginTop="20dp"
+                    android:id="@+id/TxtFailureWorkDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="WORK DATE"
+                    android:textColor="@color/colorWhite" />
+
+                <EditText
+                    android:id="@+id/EtFailureWorkDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edittext"
+                    android:drawableRight="@drawable/ic_date_range"
+                    android:focusable="false"
+                    android:hint="MM/DD/YYYY"
+                    android:padding="10dp"
+                    android:textColor="@color/colorWhite"
+                    android:textColorHint="@color/whitegray" />
+
+
+                <TextView
+                    android:id="@+id/TxtDateTo"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="DATE OF FAILURE TO TIME IN/TIME OUT:"
+                    android:textColor="@color/colorWhite" />
+
+                <EditText
+                    android:id="@+id/EtDateOfFailure"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edittext"
+                    android:drawableRight="@drawable/ic_date_range"
+                    android:focusable="false"
+                    android:hint="MM/DD/YYYY"
+                    android:padding="10dp"
+                    android:textColor="@color/colorWhite"
+                    android:textColorHint="@color/whitegray" />
+
+
+                <TextView
+                    android:id="@+id/TxtTimeFailure"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TIME:"
+                    android:textColor="@color/colorWhite" />
+
+                <EditText
+                    android:id="@+id/EtTimeFailure"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edittext"
+                    android:drawableRight="@drawable/ic_access_time"
+                    android:focusable="false"
+                    android:hint="HH:mm"
+                    android:padding="10dp"
+                    android:textColor="@color/colorWhite"
+                    android:textColorHint="@color/whitegray" />
+
+                <TextView
+                    android:id="@+id/TxtFailureTimeType"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TIME TYPE:"
+                    android:textColor="@color/colorWhite" />
+
+                <EditText
+                    android:id="@+id/EtFailureTimeType"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edittext"
+                    android:drawableRight="@drawable/ic_keyboard_arrow_down"
+                    android:focusable="false"
+                    android:hint="Please Select"
+                    android:padding="10dp"
+                    android:textColor="@color/colorWhite"
+                    android:textColorHint="@color/whitegray" />
+
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/TxtFailureReason"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="REASON:"
+                    android:textColor="@color/colorWhite" />
+                <EditText
+                    android:id="@+id/EtFailureReason"
+                    android:textColor="@color/colorWhite"
+                    android:padding="10dp"
+                    android:background="@drawable/edittext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:lines="6"
+                    android:maxLength="250"
+                    android:gravity="top|left"
+                    android:inputType="textMultiLine|textCapSentences"/>
+
+                <Button
+                    android:layout_gravity="center"
+                    android:id="@+id/BtnSubmitFailure"
+                    android:layout_marginTop="25dp"
+                    android:textSize="18dp"
+                    android:textColor="@color/colorWhite"
+                    android:background="@drawable/custombutton"
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:text="Submit"/>
+
+
+            </LinearLayout>
+
+
+
+        </RelativeLayout>
+
+
+
+</ScrollView>

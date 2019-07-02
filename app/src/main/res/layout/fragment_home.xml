@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/swipe_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/svHome"
+    tools:context=".HomeFragment">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="50dp">
+
+        <RelativeLayout
+            android:id="@+id/rlProfileImage"
+            android:layout_marginTop="15dp"
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:layout_width="125dp"
+                android:layout_height="125dp"
+                android:background="@drawable/profileimage">
+            <ImageView
+                android:id="@+id/imageProfileImage"
+                android:src="@drawable/ic_account_circle_120dp"
+                android:layout_centerInParent="true"
+                android:layout_width="120dp"
+                android:layout_height="120dp" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_below="@id/rlProfileImage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/upperProfile">
+        <RelativeLayout
+            android:layout_marginTop="10dp"
+            android:id="@+id/rlProfileInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="Fullname"
+                android:textColor="@color/colorWhite"
+                android:fontFamily="sans-serif"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:id="@+id/txtProfileFullName"/>
+            <TextView
+                android:id="@+id/txtProfileDepartment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/txtProfileFullName"
+                android:textColor="@color/colorWhite"
+                android:text="Department"/>
+
+            <TextView
+                android:id="@+id/txtProfileRole"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/txtProfileDepartment"
+                android:textColor="@color/colorWhite"
+                android:text="Role"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:visibility="gone"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rlProfileInfo"
+            android:id="@+id/relTimeIn">
+
+            <Button
+                android:id="@+id/btnTimeIn"
+                android:layout_marginTop="5dp"
+                android:textSize="18dp"
+                android:textColor="@color/colorWhite"
+                android:background="@drawable/custombutton"
+                android:layout_centerHorizontal="true"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:text="Time In"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rlProfileInfo"
+            android:visibility="gone"
+            android:id="@+id/relTimeOut">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/relTimeInInfo">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_access_time"
+                    android:id="@+id/timelogo"/>
+                <TextView
+                    android:layout_marginLeft="3dp"
+                    android:layout_toRightOf="@id/timelogo"
+                    android:textSize="16dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="a"
+                    android:textColor="@color/colorWhite"
+                    android:textStyle="bold"
+                    android:id="@+id/txtTimeIn"/>
+
+            </RelativeLayout>
+
+            <Button
+                android:layout_below="@id/relTimeInInfo"
+                android:id="@+id/btnTimeOut"
+                android:layout_marginTop="5dp"
+                android:textSize="18dp"
+                android:textColor="@color/colorWhite"
+                android:background="@drawable/custombutton"
+                android:layout_centerHorizontal="true"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:text="Time Out"/>
+        </RelativeLayout>
+
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/upperProfile"
+            android:id="@+id/relCalendarTimeSheet">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:id="@+id/timesheettxtdesign">
+                <RelativeLayout
+                    android:layout_marginLeft="15dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:background="?attr/selectableItemBackground"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btnRelTableView">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_view_list"
+                        android:id="@+id/imageviewlist"
+                        />
+                    <TextView
+                        android:textSize="16dp"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="5dp"
+                        android:textColor="@color/colorWhite"
+                        android:layout_toRightOf="@id/imageviewlist"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="TABLE VIEW"/>
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_marginTop="5dp"
+                    android:layout_below="@id/btnRelTableView"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@color/colorWhite"
+                    android:id="@+id/upperWhite">
+
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_marginTop="3dp"
+                    android:layout_below="@id/upperWhite"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="@color/colorWhite"
+                    android:fontFamily="sans-serif"
+                    android:textSize="20dp"
+                    android:id="@+id/txtTimeSheet"
+                    android:text="CALENDAR TIMESHEET"/>
+
+                <RelativeLayout
+                    android:layout_marginTop="3dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@color/colorWhite"
+                    android:layout_below="@id/txtTimeSheet"
+                    android:id="@+id/lowerlineCalendarSheet">
+
+                </RelativeLayout>
+
+                <com.applandeo.materialcalendarview.CalendarView
+                    app:headerColor="@color/colorPrimaryDark"
+                    app:daysLabelsColor="@color/colorPrimaryDark"
+                    android:layout_marginTop="20dp"
+                    android:id="@+id/calendarView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/lowerlineCalendarSheet"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="20dp"
+                    />
+
+        </RelativeLayout>
+
+        </RelativeLayout>
+
+
+
+
+
+
+        <RelativeLayout
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/upperProfile"
+            android:id="@+id/relTableTimeSheet">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:id="@+id/tabletimesheettxtdesign">
+                <RelativeLayout
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="15dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:background="?attr/selectableItemBackground"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btnRelCalendarView">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_date_range"
+                        android:id="@+id/imagecalendarlist"
+                        />
+                    <TextView
+                        android:textSize="16dp"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="5dp"
+                        android:textColor="@color/colorWhite"
+                        android:layout_toRightOf="@id/imagecalendarlist"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="CALENDAR VIEW"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="15dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:background="?attr/selectableItemBackground"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btnRelMonthYear">
+
+                    <TextView
+                        android:textSize="14dp"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="5dp"
+                        android:textColor="@color/colorWhite"
+                        android:id="@+id/txtMonthYear"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Month, Year"/>
+                    <ImageView
+                        android:layout_toRightOf="@id/txtMonthYear"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_keyboard_arrow_down"
+                        android:id="@+id/calendarRelMonthYear"
+                        />
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_below="@id/btnRelCalendarView"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@color/colorWhite"
+                    android:id="@+id/upperlinetableSheet">
+
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_marginTop="3dp"
+                    android:layout_below="@id/upperlinetableSheet"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="@color/colorWhite"
+                    android:fontFamily="sans-serif"
+                    android:textSize="20dp"
+                    android:id="@+id/tabletxtTimeSheet"
+                    android:text="TABLE TIMESHEET"/>
+
+                <RelativeLayout
+                    android:layout_marginTop="3dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@color/colorWhite"
+                    android:layout_below="@id/tabletxtTimeSheet"
+                    android:id="@+id/lowerlinetableSheet">
+
+                </RelativeLayout>
+
+
+                <android.support.v7.widget.RecyclerView
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:layout_below="@id/lowerlinetableSheet"
+                    android:id="@+id/attendance_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    android:scrollbars="vertical"
+                    android:divider="@android:color/transparent"
+                    android:listSelector="@android:color/transparent" />
+
+                <RelativeLayout
+                    android:visibility="gone"
+                    android:layout_below="@id/lowerlinetableSheet"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="50dp"
+                    android:id="@+id/relNoData"
+                    android:layout_centerInParent="true">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_error_white"
+                    android:id="@+id/imgNoData"
+                    android:layout_marginRight="5dp"/>
+                <TextView
+                    android:layout_toRightOf="@id/imgNoData"
+                    android:textSize="20dp"
+                    android:textColor="@color/colorWhite"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="NO DATA AVAILABLE"/>
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+
+
+
+
+
+
+
+    </RelativeLayout>
+</android.support.v4.widget.NestedScrollView>
+</android.support.v4.widget.SwipeRefreshLayout>

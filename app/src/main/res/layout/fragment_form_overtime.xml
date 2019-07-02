@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Form.FormOvertimeFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/TxtOvertimeForm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:text="@string/formovertime"
+                android:textColor="@color/colorWhite"
+                android:textSize="24dp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_gravity="center"
+                android:id="@+id/TxtStartFillingOvertime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="@string/startfilingform"
+                android:textColor="@color/colorWhite"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/TxtAllFieldsOvertime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="3dp"
+                android:gravity="center"
+                android:text="@string/allfieldswith"
+                android:textColor="@color/colorWhite"
+                android:textSize="16dp" />
+
+
+
+            <TextView
+                android:layout_marginTop="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="WORK DATE&#42;"
+                android:textColor="@color/colorWhite" />
+
+            <EditText
+                android:id="@+id/EtOvertimeDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext"
+                android:drawableRight="@drawable/ic_date_range"
+                android:focusable="false"
+                android:hint="MM/DD/YYYY"
+                android:padding="10dp"
+                android:textColor="@color/colorWhite"
+                android:textColorHint="@color/whitegray" />
+
+
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ACTUAL START DATE&#42;"
+                android:textColor="@color/colorWhite" />
+
+            <EditText
+                android:id="@+id/EtOvertimeStartDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext"
+                android:drawableRight="@drawable/ic_date_range"
+                android:focusable="false"
+                android:hint="MM/DD/YYYY"
+                android:padding="10dp"
+                android:textColor="@color/colorWhite"
+                android:textColorHint="@color/whitegray" />
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="START TIME"
+                android:textColor="@color/colorWhite" />
+
+            <EditText
+                android:id="@+id/EtOvertimeStartTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext"
+                android:drawableRight="@drawable/ic_access_time"
+                android:focusable="false"
+                android:hint="HH:mm"
+                android:padding="10dp"
+                android:textColor="@color/colorWhite"
+                android:textColorHint="@color/whitegray" />
+
+
+
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ACTUAL END DATE&#42;"
+                android:textColor="@color/colorWhite" />
+
+            <EditText
+                android:id="@+id/EtOvertimeEndDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext"
+                android:drawableRight="@drawable/ic_date_range"
+                android:focusable="false"
+                android:hint="MM/DD/YYYY"
+                android:padding="10dp"
+                android:textColor="@color/colorWhite"
+                android:textColorHint="@color/whitegray" />
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="END TIME"
+                android:textColor="@color/colorWhite" />
+
+            <EditText
+                android:id="@+id/EtOvertimeEndTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext"
+                android:drawableRight="@drawable/ic_access_time"
+                android:focusable="false"
+                android:hint="HH:mm"
+                android:padding="10dp"
+                android:textColor="@color/colorWhite"
+                android:textColorHint="@color/whitegray" />
+
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="REASON&#42;"
+                android:textColor="@color/colorWhite" />
+            <EditText
+                android:id="@+id/EtOvertimeReason"
+                android:textColor="@color/colorWhite"
+                android:padding="10dp"
+                android:background="@drawable/edittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lines="6"
+                android:maxLength="250"
+                android:gravity="top|left"
+                android:inputType="textMultiLine|textCapSentences"/>
+
+
+            <Button
+                android:layout_gravity="center"
+                android:id="@+id/BtnSubmitOvertime"
+                android:layout_marginTop="25dp"
+                android:textSize="18dp"
+                android:textColor="@color/colorWhite"
+                android:background="@drawable/custombutton"
+                android:layout_centerHorizontal="true"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:text="Submit"/>
+
+
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+
+</ScrollView>

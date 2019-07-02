@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "974457685879",
+    "firebase_url": "https://itap-d6bf4.firebaseio.com",
+    "project_id": "itap-d6bf4",
+    "storage_bucket": "itap-d6bf4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:974457685879:android:ed537ae535bf6cb1",
+        "android_client_info": {
+          "package_name": "com.switso.itap"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "974457685879-1umuss0u959gf6k609hs881qbeood484.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.switso.itap",
+            "certificate_hash": "b661f20dcad276cad83ac9290fc8f9bde2731d61"
+          }
+        },
+        {
+          "client_id": "974457685879-urdh0ph3pg6m847iesevtke70uk20hit.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDWv4ELG26u9SRowk8YcXCunfSwXa7Teds"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "974457685879-urdh0ph3pg6m847iesevtke70uk20hit.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="30dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/DialogBanner"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@color/colorError">
+
+            <TextView
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/error"
+                android:textSize="22dp"
+                android:textStyle="bold"
+                android:textColor="@color/colorWhite"/>
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_cancel_red_80dp"/>
+
+            <TextView
+                android:id="@+id/txtError"
+                android:paddingTop="10dp"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                android:paddingBottom="20dp"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="22dp"
+                android:textColor="@color/txtColorPrimary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""/>
+
+            <Button
+                android:layout_gravity="center"
+                android:id="@+id/BtnOkay"
+                android:layout_marginTop="10dp"
+                android:textSize="18dp"
+                android:textColor="@color/colorWhite"
+                android:background="@drawable/customerrorbutton"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:text="OKAY"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

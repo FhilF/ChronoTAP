@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Form.FilingFormFragment">
+
+    <ScrollView
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="30dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/TxtLeaveOfAbsence"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="15dp"
+                        android:gravity="center"
+                        android:text="@string/formleave"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="24dp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:layout_below="@id/TxtLeaveOfAbsence"
+                        android:id="@+id/TxtStartFilling"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:text="Start filling you form."
+                        android:textColor="@color/colorWhite"
+                        android:textSize="18dp" />
+
+                    <TextView
+                        android:id="@+id/TxtAllFields"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/TxtStartFilling"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="3dp"
+                        android:gravity="center"
+                        android:text="All fields are required for approval."
+                        android:textColor="@color/colorWhite"
+                        android:textSize="16dp" />
+                </RelativeLayout>
+
+
+
+                    <TextView
+                        android:layout_marginTop="20dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="LEAVE TYPE"
+                        android:textColor="@color/colorWhite" />
+
+                    <EditText
+                        android:id="@+id/EtLeaveType"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/edittext"
+                        android:drawableRight="@drawable/ic_keyboard_arrow_down"
+                        android:focusable="false"
+                        android:hint="Select a leave"
+                        android:padding="10dp"
+                        android:textColor="@color/colorWhite"
+                        android:textColorHint="@color/whitegray" />
+
+                    <TextView
+                        android:layout_marginTop="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="LEAVE DATE FROM:"
+                        android:textColor="@color/colorWhite" />
+
+                    <EditText
+                        android:id="@+id/EtLeaveDateFrom"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/edittext"
+                        android:drawableRight="@drawable/ic_date_range"
+                        android:focusable="false"
+                        android:hint="MM/DD/YYYY"
+                        android:padding="10dp"
+                        android:textColor="@color/colorWhite"
+                        android:textColorHint="@color/whitegray" />
+
+
+                    <TextView
+                        android:layout_marginTop="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="LEAVE DATE TO:"
+                        android:textColor="@color/colorWhite" />
+
+                    <EditText
+                        android:id="@+id/EtLeaveDateTo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/TxtDateTo"
+                        android:background="@drawable/edittext"
+                        android:drawableRight="@drawable/ic_date_range"
+                        android:focusable="false"
+                        android:hint="MM/DD/YYYY"
+                        android:padding="10dp"
+                        android:textColor="@color/colorWhite"
+                        android:textColorHint="@color/whitegray" />
+
+
+                    <TextView
+                        android:layout_marginTop="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="HALF DAY"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="18dp" />
+
+                    <RadioGroup
+                        android:id="@+id/RadioDayType"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/RadioNoHalfDay"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:buttonTint="@color/colorWhite"
+                            android:checked="true"
+                            android:text="No"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="16dp" />
+
+                        <RadioButton
+                            android:id="@+id/RadioYesHalfDay"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:buttonTint="@color/colorWhite"
+                            android:text="Yes"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="16dp" />
+
+                    </RadioGroup>
+
+
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="REASON:"
+                    android:textColor="@color/colorWhite" />
+                <EditText
+                    android:id="@+id/EtReason"
+                    android:textColor="@color/colorWhite"
+                    android:padding="10dp"
+                    android:background="@drawable/edittext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:lines="6"
+                    android:maxLength="250"
+                    android:gravity="top|left"
+                    android:inputType="textMultiLine|textCapSentences"/>
+
+                <Button
+                    android:layout_gravity="center"
+                    android:id="@+id/BtnSubmit"
+                    android:layout_marginTop="25dp"
+                    android:textSize="18dp"
+                    android:textColor="@color/colorWhite"
+                    android:background="@drawable/custombutton"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:text="Submit"/>
+
+
+            </LinearLayout>
+        </RelativeLayout>
+
+    </ScrollView>
+
+</FrameLayout>

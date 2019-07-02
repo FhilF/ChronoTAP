@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Form.FormRestdayFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp">
+
+        <TextView
+            android:id="@+id/TxtRestdayForm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:text="@string/formrestday"
+            android:textColor="@color/colorWhite"
+            android:textSize="24dp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_below="@id/TxtRestdayForm"
+            android:id="@+id/TxtStartFillingRestday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="@string/startfilingform"
+            android:textColor="@color/colorWhite"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/TxtAllFieldsRestday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/TxtStartFillingRestday"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="3dp"
+            android:gravity="center"
+            android:text="@string/allfields"
+            android:textColor="@color/colorWhite"
+            android:textSize="16dp" />
+
+
+
+        <TextView
+            android:layout_marginTop="15dp"
+            android:layout_below="@id/TxtAllFieldsRestday"
+            android:id="@+id/TxtRestdayOption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="OPTION"
+            android:textColor="@color/colorWhite" />
+
+        <EditText
+            android:id="@+id/EtRestdayOption"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/TxtRestdayOption"
+            android:background="@drawable/edittext"
+            android:drawableRight="@drawable/ic_keyboard_arrow_down"
+            android:focusable="false"
+            android:hint="--Please select--"
+            android:padding="10dp"
+            android:textColor="@color/colorWhite"
+            android:textColorHint="@color/whitegray" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/RelOptions"
+            android:layout_below="@id/EtRestdayOption">
+
+
+            <!-- Add -->
+            <RelativeLayout
+                android:visibility="gone"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/RelRestdayOptionAdd">
+
+                <TextView
+                    android:id="@+id/TxtAddRestdayNew"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="NEW REST DAY"
+                    android:textColor="@color/colorWhite" />
+
+                <EditText
+                    android:id="@+id/EtAddRestdayNew"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/TxtAddRestdayNew"
+                    android:background="@drawable/edittext"
+                    android:drawableRight="@drawable/ic_date_range"
+                    android:focusable="false"
+                    android:hint="MM/DD/YYYY"
+                    android:padding="10dp"
+                    android:textColor="@color/colorWhite"
+                    android:textColorHint="@color/whitegray" />
+
+            </RelativeLayout>
+
+            <!-- Change -->
+            <RelativeLayout
+                android:visibility="gone"
+                android:id="@+id/RelRestdayOptionChange"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/TxtChangeRestdayNew"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="NEW REST DAY"
+                    android:textColor="@color/colorWhite" />
+
+                <EditText
+                    android:id="@+id/EtChangeRestDayNew"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/TxtChangeRestdayNew"
+                    android:background="@drawable/edittext"
+                    android:drawableRight="@drawable/ic_date_range"
+                    android:focusable="false"
+                    android:hint="MM/DD/YYYY"
+                    android:padding="10dp"
+                    android:textColor="@color/colorWhite"
+                    android:textColorHint="@color/whitegray" />
+
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@id/EtChangeRestDayNew"
+                    android:id="@+id/TxtChangeRestdayOld"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="OLD REST DAY"
+                    android:textColor="@color/colorWhite" />
+
+                <EditText
+                    android:id="@+id/EtChangeRestDayOld"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/TxtChangeRestdayOld"
+                    android:background="@drawable/edittext"
+                    android:drawableRight="@drawable/ic_date_range"
+                    android:focusable="false"
+                    android:hint="MM/DD/YYYY"
+                    android:padding="10dp"
+                    android:textColor="@color/colorWhite"
+                    android:textColorHint="@color/whitegray" />
+
+            </RelativeLayout>
+
+
+
+
+
+
+            <!-- Remove -->
+            <RelativeLayout
+                android:visibility="gone"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/RelRestdayOptionRemove">
+
+                <TextView
+                    android:id="@+id/TxtRemoveRestdayOld"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="OLD REST DAY"
+                    android:textColor="@color/colorWhite" />
+
+                <EditText
+                    android:id="@+id/EtRemoveOldRestDay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/TxtRemoveRestdayOld"
+                    android:background="@drawable/edittext"
+                    android:drawableRight="@drawable/ic_date_range"
+                    android:focusable="false"
+                    android:hint="MM/DD/YYYY"
+                    android:padding="10dp"
+                    android:textColor="@color/colorWhite"
+                    android:textColorHint="@color/whitegray" />
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/RelOptions"
+            android:id="@+id/TxtRestdayReason"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="REASON:"
+            android:textColor="@color/colorWhite" />
+        <EditText
+            android:id="@+id/EtRestdayReason"
+            android:layout_below="@id/TxtRestdayReason"
+            android:textColor="@color/colorWhite"
+            android:padding="10dp"
+            android:background="@drawable/edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lines="6"
+            android:maxLength="250"
+            android:gravity="top|left"
+            android:inputType="textMultiLine|textCapSentences"/>
+
+
+        <Button
+            android:layout_below="@id/EtRestdayReason"
+            android:id="@+id/BtnSubmitRestday"
+            android:layout_marginTop="25dp"
+            android:textSize="18dp"
+            android:textColor="@color/colorWhite"
+            android:background="@drawable/custombutton"
+            android:layout_centerHorizontal="true"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Submit"/>
+
+
+
+
+    </RelativeLayout>
+
+</ScrollView>

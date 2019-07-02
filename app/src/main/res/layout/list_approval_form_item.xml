@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelFormItem"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?attr/selectableItemBackground">
+
+    <LinearLayout
+        android:paddingTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/TxtDate"
+                android:textSize="14dp"
+                android:text="Date"
+                android:layout_alignParentLeft="true"
+                android:textColor="@color/colorWhite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/TxtStatus"
+                android:textSize="14dp"
+                android:text="Status"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/colorWhite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+        <TextView
+
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:id="@+id/TxtName"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:text="Name"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/colorWhite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:textStyle="bold"
+            android:id="@+id/TxtFormType"
+            android:textSize="15dp"
+            android:text="Form type"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/colorWhite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <RelativeLayout
+            android:layout_marginTop="7dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#50ffffff"></RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

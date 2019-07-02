@@ -1,0 +1,462 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Form.FormShiftCodeFragment">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/TxtShiftCodeForm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:text="@string/formshiftcode"
+                android:textColor="@color/colorWhite"
+                android:textSize="24dp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/TxtStartFillingShiftCode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="@string/startfilingform"
+                android:textColor="@color/colorWhite"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/TxtAllFieldsShiftCode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="3dp"
+                android:gravity="center"
+                android:text="@string/allfields"
+                android:textColor="@color/colorWhite"
+                android:textSize="16dp" />
+
+
+
+            <TextView
+                android:layout_marginTop="15dp"
+                android:id="@+id/TxtShiftCodeType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SHIFT TYPE"
+                android:textColor="@color/colorWhite" />
+
+            <EditText
+                android:id="@+id/EtShiftType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext"
+                android:drawableRight="@drawable/ic_keyboard_arrow_down"
+                android:focusable="false"
+                android:hint="--Please select--"
+                android:padding="10dp"
+                android:textColor="@color/colorWhite"
+                android:textColorHint="@color/whitegray" />
+
+
+            <TextView
+                android:id="@+id/TxtShiftDateFrom"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="DATE FROM:"
+                android:textColor="@color/colorWhite" />
+
+            <EditText
+                android:id="@+id/EtShiftDateFrom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext"
+                android:drawableRight="@drawable/ic_date_range"
+                android:focusable="false"
+                android:hint="MM/DD/YYYY"
+                android:padding="10dp"
+                android:textColor="@color/colorWhite"
+                android:textColorHint="@color/whitegray" />
+
+
+            <TextView
+                android:id="@+id/TxtShiftDateTo"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="DATE TO:"
+                android:textColor="@color/colorWhite" />
+
+            <EditText
+                android:id="@+id/EtShiftDateTo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext"
+                android:drawableRight="@drawable/ic_date_range"
+                android:focusable="false"
+                android:hint="MM/DD/YYYY"
+                android:padding="10dp"
+                android:textColor="@color/colorWhite"
+                android:textColorHint="@color/whitegray" />
+
+
+
+            <RadioGroup
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:id="@+id/RgSingleCompound"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/RadioSingle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/colorWhite"
+                    android:checked="true"
+                    android:text="Single"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="16dp" />
+
+                <RadioButton
+                    android:id="@+id/RadioCompound"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/colorWhite"
+                    android:text="Compound"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="16dp" />
+
+            </RadioGroup>
+
+
+            <LinearLayout
+                android:id="@+id/LinSingle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_marginTop="15dp"
+                    android:id="@+id/TxtShiftCode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SHIFT CODE"
+                    android:textColor="@color/colorWhite" />
+
+                <EditText
+                    android:id="@+id/EtShiftCode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edittext"
+                    android:drawableRight="@drawable/ic_keyboard_arrow_down"
+                    android:focusable="false"
+                    android:hint="--Please select--"
+                    android:padding="10dp"
+                    android:textColor="@color/colorWhite"
+                    android:textColorHint="@color/whitegray" />
+
+                <CheckBox
+                    android:visibility="gone"
+                    android:id="@+id/CbShiftCode"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:visibility="gone"
+                android:layout_marginTop="20dp"
+                android:id="@+id/LinCompound"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TableLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_alignParentLeft="true"
+                            android:textSize="18dp"
+                            android:layout_marginTop="15dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Sunday"
+                            android:textColor="@color/colorWhite" />
+
+                        <TextView
+                            android:layout_alignParentRight="true"
+                            android:textSize="18dp"
+                            android:textColor="@color/colorWhite"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Restday"/>
+                    </RelativeLayout>
+                    <TableRow
+                        android:id="@+id/tableRow1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
+
+                        <EditText
+                            android:id="@+id/EtShiftCodeSun"
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/edittext"
+                            android:drawableRight="@drawable/ic_keyboard_arrow_down"
+                            android:focusable="false"
+                            android:hint="--Please select--"
+                            android:padding="10dp"
+                            android:textColor="@color/colorWhite"
+                            android:textColorHint="@color/whitegray" />
+
+                        <CheckBox
+                            android:id="@+id/CbRestdaySunday"
+                            android:buttonTint="@color/colorWhite"
+                            />
+
+                    </TableRow>
+
+                    <TextView
+                        android:textSize="18dp"
+                        android:textColor="@color/colorWhite"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Monday"/>
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
+
+                        <EditText
+                            android:layout_weight="1"
+                            android:id="@+id/EtShiftCodeMon"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/edittext"
+                            android:drawableRight="@drawable/ic_keyboard_arrow_down"
+                            android:focusable="false"
+                            android:hint="--Please select--"
+                            android:padding="10dp"
+                            android:textColor="@color/colorWhite"
+                            android:textColorHint="@color/whitegray" />
+
+                        <CheckBox
+                            android:id="@+id/CbRestdayMonday"
+                            android:buttonTint="@color/colorWhite"
+                            />
+
+                    </TableRow>
+
+                    <TextView
+                        android:textSize="18dp"
+                        android:textColor="@color/colorWhite"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tuesday"/>
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
+
+                        <EditText
+                            android:layout_weight="1"
+                            android:id="@+id/EtShiftCodeTue"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/edittext"
+                            android:drawableRight="@drawable/ic_keyboard_arrow_down"
+                            android:focusable="false"
+                            android:hint="--Please select--"
+                            android:padding="10dp"
+                            android:textColor="@color/colorWhite"
+                            android:textColorHint="@color/whitegray" />
+
+                        <CheckBox
+                            android:id="@+id/CbRestdayTuesday"
+                            android:buttonTint="@color/colorWhite"
+                            />
+
+                    </TableRow>
+
+                    <TextView
+                        android:textSize="18dp"
+                        android:textColor="@color/colorWhite"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Wednesday"/>
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
+
+                        <EditText
+                            android:layout_weight="1"
+                            android:id="@+id/EtShiftCodeWed"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/edittext"
+                            android:drawableRight="@drawable/ic_keyboard_arrow_down"
+                            android:focusable="false"
+                            android:hint="--Please select--"
+                            android:padding="10dp"
+                            android:textColor="@color/colorWhite"
+                            android:textColorHint="@color/whitegray" />
+
+                        <CheckBox
+                            android:id="@+id/CbRestdayWednesday"
+                            android:buttonTint="@color/colorWhite"
+                            />
+
+                    </TableRow>
+
+                    <TextView
+                        android:textSize="18dp"
+                        android:textColor="@color/colorWhite"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Thursday"/>
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
+
+                        <EditText
+                            android:layout_weight="1"
+                            android:id="@+id/EtShiftCodeThu"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/edittext"
+                            android:drawableRight="@drawable/ic_keyboard_arrow_down"
+                            android:focusable="false"
+                            android:hint="--Please select--"
+                            android:padding="10dp"
+                            android:textColor="@color/colorWhite"
+                            android:textColorHint="@color/whitegray" />
+
+                        <CheckBox
+                            android:id="@+id/CbRestdayThursday"
+                            android:buttonTint="@color/colorWhite"
+                            />
+
+                    </TableRow>
+
+                    <TextView
+                        android:textSize="18dp"
+                        android:textColor="@color/colorWhite"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Friday"/>
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
+
+                        <EditText
+                            android:layout_weight="1"
+                            android:id="@+id/EtShiftCodeFri"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/edittext"
+                            android:drawableRight="@drawable/ic_keyboard_arrow_down"
+                            android:focusable="false"
+                            android:hint="--Please select--"
+                            android:padding="10dp"
+                            android:textColor="@color/colorWhite"
+                            android:textColorHint="@color/whitegray" />
+
+                        <CheckBox
+                            android:id="@+id/CbRestdayFriday"
+                            android:buttonTint="@color/colorWhite"
+                            />
+
+                    </TableRow>
+
+                    <TextView
+                        android:textSize="18dp"
+                        android:textColor="@color/colorWhite"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Saturday"/>
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
+
+                        <EditText
+                            android:layout_weight="1"
+                            android:id="@+id/EtShiftCodeSat"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/edittext"
+                            android:drawableRight="@drawable/ic_keyboard_arrow_down"
+                            android:focusable="false"
+                            android:hint="--Please select--"
+                            android:padding="10dp"
+                            android:textColor="@color/colorWhite"
+                            android:textColorHint="@color/whitegray" />
+
+                        <CheckBox
+                            android:id="@+id/CbRestdaySaturday"
+                            android:buttonTint="@color/colorWhite"
+                            />
+
+                    </TableRow>
+
+                </TableLayout>
+
+            </LinearLayout>
+
+
+
+            <TextView
+                android:layout_marginTop="20dp"
+                android:id="@+id/TxtShiftCodeReason"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="REASON:"
+                android:textColor="@color/colorWhite" />
+            <EditText
+                android:id="@+id/EtShiftCodeReason"
+                android:textColor="@color/colorWhite"
+                android:padding="10dp"
+                android:background="@drawable/edittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lines="6"
+                android:maxLength="250"
+                android:gravity="top|left"
+                android:inputType="textMultiLine|textCapSentences"/>
+
+            <Button
+                android:id="@+id/BtnSubmitShiftCode"
+                android:layout_marginTop="25dp"
+                android:textSize="18dp"
+                android:textColor="@color/colorWhite"
+                android:background="@drawable/custombutton"
+                android:layout_gravity="center"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:text="Submit"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</ScrollView>

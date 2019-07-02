@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Form.FilingFormFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/TxtOffSiteForm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:text="@string/formoffsite"
+                android:textColor="@color/colorWhite"
+                android:textSize="24dp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_gravity="center"
+                android:layout_below="@id/TxtFailuretoinout"
+                android:id="@+id/TxtStartFilling"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="Start filling you form."
+                android:textColor="@color/colorWhite"
+                android:textSize="18dp" />
+
+            <TextView
+                android:layout_gravity="center"
+                android:id="@+id/TxtAllFields"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/TxtStartFilling"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="3dp"
+                android:gravity="center"
+                android:text="All fields are required for approval."
+                android:textColor="@color/colorWhite"
+                android:textSize="16dp" />
+
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="START DATE"
+                    android:textColor="@color/colorWhite" />
+
+                <EditText
+                    android:id="@+id/EtOffSiteStartDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edittext"
+                    android:drawableRight="@drawable/ic_date_range"
+                    android:focusable="false"
+                    android:hint="MM/DD/YYYY"
+                    android:padding="10dp"
+                    android:textColor="@color/colorWhite"
+                    android:textColorHint="@color/whitegray" />
+
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="END DATE"
+                    android:textColor="@color/colorWhite" />
+
+                <EditText
+                    android:id="@+id/EtOffSiteEndDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edittext"
+                    android:drawableRight="@drawable/ic_date_range"
+                    android:focusable="false"
+                    android:hint="MM/DD/YYYY"
+                    android:padding="10dp"
+                    android:textColor="@color/colorWhite"
+                    android:textColorHint="@color/whitegray" />
+
+
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="START TIME"
+                    android:textColor="@color/colorWhite" />
+
+                <EditText
+                    android:id="@+id/EtOffSiteStartTime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edittext"
+                    android:drawableRight="@drawable/ic_access_time"
+                    android:focusable="false"
+                    android:hint="HH:mm"
+                    android:padding="10dp"
+                    android:textColor="@color/colorWhite"
+                    android:textColorHint="@color/whitegray" />
+
+
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="END TIME"
+                    android:textColor="@color/colorWhite" />
+
+                <EditText
+                    android:id="@+id/EtOffSiteEndTime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edittext"
+                    android:drawableRight="@drawable/ic_access_time"
+                    android:focusable="false"
+                    android:hint="HH:mm"
+                    android:padding="10dp"
+                    android:textColor="@color/colorWhite"
+                    android:textColorHint="@color/whitegray" />
+
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="REASON:"
+                    android:textColor="@color/colorWhite" />
+                <EditText
+                    android:id="@+id/EtOffsiteReason"
+                    android:textColor="@color/colorWhite"
+                    android:padding="10dp"
+                    android:background="@drawable/edittext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:lines="6"
+                    android:maxLength="250"
+                    android:gravity="top|left"
+                    android:inputType="textMultiLine|textCapSentences"/>
+
+                <Button
+                    android:layout_below="@id/EtOffsiteReason"
+                    android:id="@+id/BtnSubmitOffsite"
+                    android:layout_marginTop="25dp"
+                    android:textSize="18dp"
+                    android:textColor="@color/colorWhite"
+                    android:background="@drawable/custombutton"
+                    android:layout_gravity="center"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:text="Submit"/>
+
+
+            </LinearLayout>
+
+
+
+
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</FrameLayout>

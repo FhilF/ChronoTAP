@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingBottom="20dp"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/RelBanner"
+        android:background="@color/colorPrimary">
+        <TextView
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/TxtLeaveTypeTitle"
+            android:textColor="@color/colorWhite"
+            android:textSize="18dp"
+            android:text="Choose restday option:"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/relShiftCode"
+        android:layout_below="@id/RelBanner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="15dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+        <LinearLayout
+            android:layout_alignParentTop="true"
+            android:id="@+id/LinShiftCode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:scrollbars="vertical"
+            android:scrollbarAlwaysDrawVerticalTrack="true">
+
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="0dip"
+                android:layout_weight="1"
+                android:id="@+id/LvRestdayOption"
+                ></ListView>
+            <Button
+                android:background="@drawable/custombutton"
+                android:textColor="@color/colorWhite"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/BtnConfirm"
+                android:text="DONE"
+                android:layout_weight="0"/>
+
+
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+</RelativeLayout>

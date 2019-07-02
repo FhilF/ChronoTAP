@@ -1,0 +1,54 @@
+<resources>
+    <string name="app_name">ChronoTAP</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_login">LoginActivity</string>
+
+    <string name="formstatus"><u>Form Status</u></string>
+    <string name="formdetails"><u>Form Details</u></string>
+    <string name="approversresponse"><u>Approvers Response</u></string>
+    <string name="pendingapprovals"><u>Pending Approvals</u></string>
+    <string name="pdGoogleSignin">Signing in your Google account&#8230;</string>
+    <string name="pdLogin">Signing in&#8230;</string>
+    <string name="pdLoading">Loading&#8230;</string>
+
+    <string name="sbSuccessful">Successfully submitted your form</string>
+    <string name="sbProblemSubmit">Sorry, the was a problem submitting your request</string>
+    <string name="sbNoAccount">Sorry, account is not registered</string>
+    <string name="sbProblemLoading">Sorry, there was a problem with your request</string>
+    <string name="sbSelectValidDate">Please select a valid date</string>
+    <string name="sbNoData">No Data Available</string>
+    <string name="sbCannotConnect">Cannot connect to the server</string>
+
+    <string name="nomoreforms">No more forms to display</string>
+    <string name="details">Details</string>
+    <string name="attendancelogsheet">Attendance Log Sheet</string>
+    <string name="errorOccuredServer">An error occurred, the server may be down please try again later</string>
+    <string name="errorOccuredCheckNet">An error occurred, please try checking your internet connection or restart the application</string>
+    <string name="errorOccuredRetryAgain">An error occurred, please try again</string>
+    <string name="errorOccuredRefresh">An error occurred, please refresh activity</string>
+    <string name="errorOccuredCannotConnect">An error occurred, cannot connect to the server</string>
+    <string name="statereason">Please state your reason</string>
+    <string name="chooseaction">Please choose an action</string>
+    <string name="formfailure">Failure to Time in/Time out Form</string>
+    <string name="formleave">Leave of Absence Form</string>
+    <string name="formoffsite">Official Business Trip/ Off-site Assignment Form</string>
+    <string name="formovertime">Overtime Form</string>
+    <string name="formrestday">Rest Day Form</string>
+    <string name="formshiftcode">Shift Code Form</string>
+    <string name="formtoil">TOIL Credit Form</string>
+    <string name="nonet">No Internet Connection</string>
+    <string name="signinsuccesful">You have successfully signed in</string>
+    <string name="signinfail">Sign in failed</string>
+    <string name="startfilingform">Start filling your form</string>
+    <string name="allfields">All fields are required for approval.</string>
+    <string name="allfieldswith">All fields with &#42; are required for approval.</string>
+    <string name="pleasefillup">Please fill up the required details</string>
+    <string name="error">Error!</string>
+</resources>

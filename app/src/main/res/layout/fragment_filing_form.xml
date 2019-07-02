@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/mainScroll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp">
+
+        <TextView
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="FORM TYPES"
+            android:textColor="@color/colorWhite"
+            android:textSize="24dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:id="@+id/TxtFormTypes"/>
+
+        <TextView
+            android:id="@+id/TxtPleaseSelect"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/TxtFormTypes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Please select a form type to proceed"
+            android:textColor="@color/colorWhite"
+            android:layout_centerHorizontal="true"/>
+
+
+        <LinearLayout
+            android:layout_marginTop="40dp"
+            android:id="@+id/LinColumn1FormType"
+            android:layout_below="@id/TxtPleaseSelect"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <RelativeLayout
+                android:layout_weight="1"
+                android:layout_gravity="left"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+                <RelativeLayout
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/RelBtnFailureInOut"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:clickable="true"
+                    >
+                    <RelativeLayout
+                        android:layout_centerHorizontal="true"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:background="@drawable/backgroundlogoformtypes"
+                        android:id="@+id/RelBtnInnerFailureInOut"
+                        >
+                        <ImageView
+                            android:layout_centerInParent="true"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_timer_off_50dp"
+                            android:id="@+id/LogoFailureInOut"/>
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/RelBtnInnerFailureInOut"
+                        android:text="Failure to Time In/Time Out"
+                        android:textColor="@color/colorWhite"
+                        />
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_weight="1"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <RelativeLayout
+                    android:layout_centerVertical="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/RelBtnLeaveOfAbsence"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:clickable="true"
+                    >
+                    <RelativeLayout
+                        android:layout_centerHorizontal="true"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:background="@drawable/backgroundlogoformtypes"
+                        android:id="@+id/RelBtnInnerLeaveOfAbsence"
+                        >
+                        <ImageView
+                            android:layout_centerInParent="true"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_date_range_50dp"
+                            android:id="@+id/LogoLeaveOfAbsence"/>
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/RelBtnInnerLeaveOfAbsence"
+                        android:text="Leave of Absence"
+                        android:textColor="@color/colorWhite"/>
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_weight="1"
+                android:layout_gravity="right"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+
+                <RelativeLayout
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/RelBtnTOILCredit"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:clickable="true"
+                    >
+                    <RelativeLayout
+                        android:layout_centerHorizontal="true"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:background="@drawable/backgroundlogoformtypes"
+                        android:id="@+id/RelBtnInnerTOILCredit"
+                        >
+                        <ImageView
+                            android:layout_centerInParent="true"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_monetization_on_50dp"
+                            android:id="@+id/LogoTOILCredit"/>
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/RelBtnInnerTOILCredit"
+                        android:text="TOIL Credit"
+                        android:textColor="@color/colorWhite"/>
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:id="@+id/LinColumn2FormType"
+            android:layout_below="@id/LinColumn1FormType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <RelativeLayout
+                android:layout_weight="1"
+                android:layout_gravity="left"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+                <RelativeLayout
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/RelBtnOvertime"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:clickable="true"
+                    >
+                    <RelativeLayout
+                        android:layout_centerHorizontal="true"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:background="@drawable/backgroundlogoformtypes"
+                        android:id="@+id/RelBtnInnerOvertime"
+                        >
+                        <ImageView
+                            android:layout_centerInParent="true"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_timer_50dp"
+                            android:id="@+id/LogoOvertime"/>
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/RelBtnInnerOvertime"
+                        android:text="Overtime"
+                        android:textColor="@color/colorWhite"
+                        />
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_weight="1"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <RelativeLayout
+                    android:layout_centerVertical="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/RelBtnRestDay"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:clickable="true"
+                    >
+                    <RelativeLayout
+                        android:layout_centerHorizontal="true"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:background="@drawable/backgroundlogoformtypes"
+                        android:id="@+id/RelBtnInnerRestDay"
+                        >
+                        <ImageView
+                            android:layout_centerInParent="true"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_hotel_50dp"
+                            android:id="@+id/LogoRestDay"/>
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/RelBtnInnerRestDay"
+                        android:text="Rest Day"
+                        android:textColor="@color/colorWhite"/>
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_weight="1"
+                android:layout_gravity="right"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+
+                <RelativeLayout
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/RelBtnShiftCode"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:clickable="true"
+                    >
+                    <RelativeLayout
+                        android:layout_centerHorizontal="true"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:background="@drawable/backgroundlogoformtypes"
+                        android:id="@+id/RelBtnInnerShiftCode"
+                        >
+                        <ImageView
+                            android:layout_centerInParent="true"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_create_50dp"
+                            android:id="@+id/LogoShiftCode"/>
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/RelBtnInnerShiftCode"
+                        android:text="Shift Code"
+                        android:textColor="@color/colorWhite"/>
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/LinColumn2FormType"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/RelBtnOffsiteAssignment"
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            >
+            <RelativeLayout
+                android:layout_centerHorizontal="true"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:background="@drawable/backgroundlogoformtypes"
+                android:id="@+id/RelBtnInnerOffsiteAssignment"
+                >
+                <ImageView
+                    android:layout_centerInParent="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_work_50dp"
+                    android:id="@+id/LogoOffsiteAssignment"/>
+
+            </RelativeLayout>
+
+            <TextView
+                android:gravity="center"
+                android:layout_marginTop="5dp"
+                android:layout_centerHorizontal="true"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/RelBtnInnerOffsiteAssignment"
+                android:text="Off-site Assignment"
+                android:textColor="@color/colorWhite"/>
+        </RelativeLayout>
+
+
+
+
+
+    </RelativeLayout>
+
+</ScrollView>
