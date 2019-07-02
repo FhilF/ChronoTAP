@@ -11,17 +11,17 @@ The application is built with Android Studio and uses PHP for server communicati
 <hr>
 <h3>Home</h3>
 <img src="Images/Home.png" width="150px" title="ChronoTAP">
-<h3>Home</h3>
+<h3>Form Category</h3>
 <img src="Images/FormCategory.png" width="150px" title="ChronoTAP">
-<h3>Home</h3>
+<h3>Leave Form</h3>
 <img src="Images/Leave.png" width="150px" title="ChronoTAP">
-<h3>Home</h3>
+<h3>OBT Form</h3>
 <img src="Images/OBT.png" width="150px" title="ChronoTAP">
-<h3>Home</h3>
+<h3>Overtime Form</h3>
 <img src="Images/Overtime.png" width="150px" title="ChronoTAP">
-<h3>Home</h3>
+<h3>Restday Form</h3>
 <img src="Images/Restday.png" width="150px" title="ChronoTAP">
-<h3>Home</h3>
+<h3>TOIL Form</h3>
 <img src="Images/TOIL.png" width="150px" title="ChronoTAP">
-<h3>Home</h3>
+<h3>Failure to Time in/Time out form</h3>
 <img src="Images/Failure.png" width="150px" title="ChronoTAP">
