@@ -4,7 +4,7 @@
   <img src="Images/Login.png" width="150px" title="ChronoTAP">
 </p>
 <p><b>ChronoTAP</b></p>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ChronoTAP is an android application that can manage your time to the company. It displays your time in and time out to the company. The app has also has form that you can submit to the admin to apply for Leave, Failure to time in/time out, TOIL Credit, Overtime, Rest day, Shift Code and Offsite assignment. Lastly it has a functionality that you can approve those forms with the right position.
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ChronoTAP is an android application that can manage your time in the company. It displays your time in and time out to the company. The app has also has form that you can submit to the admin to apply for Leave, Failure to time in/time out, TOIL Credit, Overtime, Rest day, Shift Code and Offsite assignment. Lastly it has a functionality that you can approve those forms with the right position.
   
 The application is built with Android Studio and uses PHP for server communication.
 </p>
